@@ -7,6 +7,8 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 router.post('/ai', async (req, res) => {
   const { prompt } = req.body;
+  console.log(process.env.API_KEY);
+  
   
   try {
     // Generate the response using the model
