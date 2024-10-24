@@ -6,8 +6,7 @@ const app = express()
 const origin = process.env.ORIGIN
 app.use(express.json())
 // app.use(cors({
-//   origin,  // Your frontend URL
-//   methods: 'POST',
+//   origin,
 // }))
 app.use(cors())
 
