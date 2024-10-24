@@ -6,7 +6,7 @@ const app = express()
 const origin = process.env.ORIGIN
 app.use(express.json())
 app.use(cors({
-  origin,  // Your frontend URL
+  origin: 'https://lip-gpt.vercel.app/',  // Your frontend URL
   methods: 'POST',
 }))
 
