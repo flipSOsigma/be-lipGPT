@@ -5,10 +5,11 @@ import cors from 'cors'
 const app = express()
 const origin = process.env.ORIGIN
 app.use(express.json())
-app.use(cors({
-  origin,  // Your frontend URL
-  methods: 'POST',
-}))
+// app.use(cors({
+//   origin,  // Your frontend URL
+//   methods: 'POST',
+// }))
+app.use(cors())
 
 const port = process.env.BE_PORT
 
